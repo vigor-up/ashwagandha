@@ -620,7 +620,7 @@
             </div>
         </section>
 
-        <!-- 聯繫我們區塊 -->
+        <!-- 聯繫我們區塊 (已更新電話、地址、郵件，並嵌入 Google 地圖連結) -->
         <section id="contact" class="mb-16 md:mb-20">
             <h2 class="text-[clamp(1.5rem,3vw,2.25rem)] font-bold text-primary mb-6 md:mb-8 flex items-center">
                 <i class="fa-solid fa-address-card mr-3 text-secondary"></i>
@@ -633,15 +633,15 @@
                         <ul class="space-y-4 text-lg">
                             <li class="flex items-start">
                                 <i class="fa-solid fa-phone text-primary mt-1 mr-3"></i>
-                                <span data-translate="contact_phone">技術專線:02-26953311 </span>
+                                <span data-translate="contact_phone">技術專線: <a href="tel:+886226953311" class="text-primary hover:underline">02-26953311</a></span>
                             </li>
                             <li class="flex items-start">
                                 <i class="fa-solid fa-envelope text-primary mt-1 mr-3"></i>
-                                <span><a href="mailto:service@youngdoerbio.com class="text-primary hover:underline">service@youngdoerbio.com</a></span>
+                                <span><a href="mailto:service@youngdoerbio.com" class="text-primary hover:underline">service@youngdoerbio.com</a></span>
                             </li>
                             <li class="flex items-start">
                                 <i class="fa-solid fa-map-marker-alt text-primary mt-1 mr-3"></i>
-                                <span data-translate="contact_address">台灣省新北市汐止區福德二路390號B棟鳳凰水岸社區8樓</span>
+                                <a href="https://www.google.com/maps/search/?api=1&query=221新北市汐止區福德二路390號B棟鳳凰水岸社區8樓" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline" data-translate="contact_address">221新北市汐止區福德二路390號B棟鳳凰水岸社區8樓</a>
                             </li>
                             <li class="flex items-start">
                                 <i class="fa-solid fa-clock text-primary mt-1 mr-3"></i>
@@ -649,16 +649,17 @@
                             </li>
                         </ul>
                         
-                        <!-- 快速諮詢按鈕 -->
+                        <!-- 快速諮詢按鈕 (更新郵件) -->
                         <div class="mt-8">
-                            <a href="mailto:in1000318@gmail.com" class="inline-block bg-primary text-white px-6 py-3 rounded-base font-bold hover:bg-primary/90 transition-colors transform hover:scale-105 duration-300">
+                            <a href="mailto:service@youngdoerbio.com" class="inline-block bg-primary text-white px-6 py-3 rounded-base font-bold hover:bg-primary/90 transition-colors transform hover:scale-105 duration-300">
                                 <i class="fa-solid fa-envelope mr-2"></i> <span data-translate="contact_btn">發送諮詢郵件</span>
                             </a>
                         </div>
                     </div>
-                    <div class="img-hover-zoom shadow-img">
-                        <img class="w-full h-auto rounded-img" src="assets/office-location-map.png" alt="首池有限公司 辦公地址導航" data-translate="https://maps.app.goo.gl/CbaJ76JHbxYJSSjP7">
-                    </div>
+                    <!-- 地圖圖片 (點擊可開啟 Google 地圖導航) -->
+                    <a href="https://www.google.com/maps/search/?api=1&query=221新北市汐止區福德二路390號B棟鳳凰水岸社區8樓" target="_blank" rel="noopener noreferrer" class="img-hover-zoom shadow-img block">
+                        <img class="w-full h-auto rounded-img" src="assets/office-location-map.png" alt="公司位置地圖" data-translate="map_alt">
+                    </a>
                 </div>
             </div>
         </section>
@@ -712,7 +713,7 @@
     </div>
 
     <script>
-        // ========== 多語言翻譯物件 ==========
+        // ========== 多語言翻譯物件 (已更新電話與地址) ==========
         const translations = {
             'zh-TW': {
                 'brand_name': '活力得®',
@@ -908,11 +909,11 @@
                 'caution6': '重度腎功能衰竭（eGFR < 15）人群（需腎科醫師指導）',
                 'contact_title': '聯繫我們',
                 'contact_info': '企業資訊',
-                'contact_phone': '技術專線: ',
-                'contact_address': '台灣省',
+                'contact_phone': '技術專線: <a href="tel:+886226953311" class="text-primary hover:underline">02-26953311</a>',
+                'contact_address': '221新北市汐止區福德二路390號B棟鳳凰水岸社區8樓',
                 'contact_hours': '服務時間：週一至週五 09:00-18:00',
                 'contact_btn': '發送諮詢郵件',
-                'map_alt': '首池有限公司 辦公地址導航',
+                'map_alt': '公司位置地圖',
                 'footer_brand': '活力得® 南非醉茄專利萃取精華<br>天然草本保健的黃金標準',
                 'footer_links': '快速連結',
                 'footer_summary': '執行摘要',
@@ -928,7 +929,7 @@
                 'footer_copyright': '© 2026 活力得® 版權所有'
             },
             'zh-CN': {
-                // 簡體中文翻譯 (此處僅提供簡體版本，為節省篇幅，實際應用時可複製繁體後轉換，這裡簡要列出部分)
+                // 簡體中文翻譯 (此處僅提供簡體版本，實際應用時可複製繁體後轉換，這裡簡要列出部分)
                 'brand_name': '活力得®',
                 'nav_summary': '执行摘要',
                 'nav_tech': '核心技术',
@@ -1122,11 +1123,11 @@
                 'caution6': '重度肾功能衰竭（eGFR < 15）人群（需肾科医师指导）',
                 'contact_title': '联系我们',
                 'contact_info': '企业资讯',
-                'contact_phone': '技术专线: ',
-                'contact_address': '台湾省',
+                'contact_phone': '技术专线: <a href="tel:+886226953311" class="text-primary hover:underline">02-26953311</a>',
+                'contact_address': '221新北市汐止區福德二路390號B棟鳳凰水岸社區8樓',
                 'contact_hours': '服务时间：周一至周五 09:00-18:00',
                 'contact_btn': '发送咨询邮件',
-                'map_alt': '首池有限公司 办公地址导航',
+                'map_alt': '公司位置地图',
                 'footer_brand': '活力得® 南非醉茄专利萃取精华<br>天然草本保健的黄金标准',
                 'footer_links': '快速链接',
                 'footer_summary': '执行摘要',
@@ -1336,11 +1337,11 @@
                 'caution6': 'Severe renal failure (eGFR < 15) (requires nephrologist guidance)',
                 'contact_title': 'Contact Us',
                 'contact_info': 'Company Information',
-                'contact_phone': 'Technical Hotline: ',
-                'contact_address': 'Taiwan',
+                'contact_phone': 'Technical Hotline: <a href="tel:+886226953311" class="text-primary hover:underline">+886-2-26953311</a>',
+                'contact_address': '8F, Building B, Phoenix Waterfront Community, No. 390, Fude 2nd Road, Xizhi District, New Taipei City 221, Taiwan',
                 'contact_hours': 'Service Hours: Mon-Fri 09:00-18:00',
                 'contact_btn': 'Send Inquiry Email',
-                'map_alt': 'Shou Chi Co., Ltd. Office Navigation',
+                'map_alt': 'Company Location Map',
                 'footer_brand': 'Vitality® Ashwagandha Patent Extract<br>The Gold Standard of Natural Herbal Health',
                 'footer_links': 'Quick Links',
                 'footer_summary': 'Executive Summary',
